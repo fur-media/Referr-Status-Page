@@ -50,6 +50,7 @@ jobs:
         run: npm start
         id: metrics
         env:
+          SOURCES: ${{env.SOURCES}}
           GITHUB_TOKEN: ${{ github.token }}
           JOB_NAME: ${{ github.workflow }}
           ARTIFACT_NAME: ${{ env.ARTIFACT_NAME }}
