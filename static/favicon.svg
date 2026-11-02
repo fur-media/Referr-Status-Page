@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="2048" height="2048">
+    <defs>
+        <linearGradient id="opacityGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="currentcolor" stop-opacity="1" />
+            <stop offset="100%" stop-color="currentcolor" stop-opacity="0.5" />
+        </linearGradient>
+    </defs>
+    <style>
+        /* Light theme defaults */
+        svg {
+            background-color: #fff;
+            color: #000;
+        }
+        path {
+            fill: url(#opacityGradient);
+        }
+
+        /* Dark theme overrides */
+        @media (prefers-color-scheme: dark) {
+            svg {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    </style>
+
+    <path
+        d="m449.72 1718v-1388.67h734.37q94.73 0 171.88 46.87 78.12 45.9 124.02 123.05 46.88 77.15 46.88
+171.88v138.67q0 94.72-45.9 170.9-44.92 76.17-123.05 121.09-78.12 44.92-174.8 44.92l414.06
+571.29h-250.98l-414.06-571.29h-159.18v-205.08h411.13q57.62 0 97.66-39.06 40.04-40.04
+40.04-95.7v-135.74q0-56.65-40.04-96.68-40.04-40.04-97.66-40.04h-528.32v1183.59z" />
+</svg>

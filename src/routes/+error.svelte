@@ -2,11 +2,12 @@
 	import { page } from '$app/stores';
 </script>
 
-<section class="flex items-center h-screen p-16">
-	<div class="container flex flex-col items-center">
-		<div class="flex flex-col gap-6 max-w-md text-center">
-			<h2 class="font-extrabold text-5xl text-error">Error</h2>
-			<p class="text-2xl md:text-3xl text-neutral-500">{$page.error?.message ?? 'ERROR'}</p>
-		</div>
-	</div>
-</section>
+<div class="flex flex-col gap-2">
+	<h1 class="m-0 text-3xl leading-tight font-semibold max-sm:text-2xl">
+		Status isn't available right now
+	</h1>
+	<p class="m-0 text-base text-kumo-subtle" data-prose>
+		{$page.error?.message ?? 'Something went wrong.'} See
+		<a href="https://referr.fyi/status">referr.fyi/status</a> for the Discord connection.
+	</p>
+</div>
